@@ -1,0 +1,826 @@
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+body{background-color: black;margin:0px; padding:0px; font-family: 'Open Sans', sans-serif;}
+section{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+h1{margin:0px auto; display:table; font-size:26px; padding:40px 0px; color:#002e5b; text-align:center;}
+h1 span{font-weight:500;}
+
+header{width:100%; display:table; background-color:black; margin-bottom:0px;}
+#logo{float:left; font-size:24px; text-transform:uppercase; color:#002e5b; font-weight:600; padding:20px 0px;}
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:yellow; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:navy; color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:yellow; transition: all 0.5s ease 0s;}
+
+.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
+.toggle-menu ul li:last-child{margin-bottom:0px;}
+
+input[type=checkbox], label{display:none;}
+
+.content{display:table; margin-bottom:60px; width:900px;}
+.content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid #fde428; display:table; padding-bottom:10px; margin-bottom:10px;}
+.content p{font-size:14px; line-height:22px; color:#7c7c7c; text-align:justify;}
+
+
+
+@media only screen and (max-width: 1440px) {
+section{max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+header{padding:20px 0px;}
+#logo{padding:0px;}
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+nav ul{width:auto;}
+nav ul li{float:none; padding:0px; width:100%; display:table;}
+nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+nav ul li a i{color:#fde428; padding-right:13px;}
+}
+
+@media only screen and (max-width: 980px) {
+.content{width:90%;}
+}
+
+@media only screen and (max-width: 568px) {
+h1{padding:25px 0px;}
+h1 span{display:block;}
+}
+
+@media only screen and (max-width: 480px) {
+section {max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+h1{font-size:20px;}
+label{padding:5px 0px;}
+#logo{font-size: 20px;}
+nav{top:47px;}
+}
+
+@media only screen and (max-width: 320px) {
+h1 {padding: 20px 0px;}
+}
+
+
+/*sidebar styling starts here */
+.sidenav {
+            height: 100%; /* Full-height: remove this if you want "auto" height */
+            width: 100px; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: auto; /* Stay on top */
+            top: 93px; /* Stay at the top */
+            left: 0;
+            background-color: black; /*black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            overflow-x: hidden; 
+
+        }
+        .sidenav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: yellow;
+            display: block;
+            padding: 20px 0;
+        }
+        .sidenav a:hover {
+            background-color: navy;
+        }
+
+/*sidebar styling ends here*/
+
+
+/*footer starts here*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+a {
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.footer {
+    position: relative;
+    padding-top: 45px;
+    background: #121518;
+}
+
+.footer .footer-about,
+.footer .footer-contact,
+.footer .footer-links,
+.footer .footer-project {
+    position: relative;
+    margin-bottom: 45px;
+    color: #999999;
+}
+
+.footer .footer-about h3,
+.footer .footer-contact h3,
+.footer .footer-links h3,
+.footer .footer-project h3 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #eeeeee;
+}
+
+.footer .footer-about h3::after,
+.footer .footer-contact h3::after,
+.footer .footer-links h3::after,
+.footer .footer-project h3::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #eeeeee;
+}
+
+.footer .footer-social {
+    position: relative;
+    margin-top: 20px;
+}
+
+.footer .footer-social a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 6px 0;
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    border: 1px solid #999999;
+    border-radius: 35px;
+}
+
+.footer .footer-social a:hover {
+    color: #ffffff;
+    background: #0085ff;
+    border-color: #0085ff;
+}
+
+.footer .footer-contact p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.footer .footer-contact i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.footer .footer-contact a:last-child i {
+    margin: 0;
+}
+
+.footer .footer-contact a:hover i {
+    color: #0085ff;
+}
+
+.footer .footer-links a {
+    display: block;
+    margin-bottom: 6px;
+    padding-left: 15px;
+    color: #999999;
+}
+
+.footer .footer-links a:last-child {
+    margin: 0;
+}
+
+.footer .footer-links a:hover {
+    color: #0085ff;
+}
+
+.footer .footer-links a::before {
+    position: absolute;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    left: 0;
+}
+
+.footer .footer-project {
+    float: left;
+    font-size: 0;
+}
+
+.footer .footer-project a {
+    padding: 0 8px 8px 0;
+    display: block;
+    width: 33.33%;
+    float: left;
+}
+
+.footer .footer-project a img {
+    width: 100%;
+}
+
+.footer .footer-newsletter {
+    margin-bottom: 35px;
+    max-width: 700px;
+    text-align: center;
+    color: #999999;
+}
+
+.footer .footer-newsletter input {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(256, 256, 256, .15);
+    margin-bottom: 15px;
+}
+
+.footer .footer-newsletter .btn {
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #e9414a;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+}
+
+.footer .footer-newsletter .btn:hover {
+    color: #0085ff;
+    background: #ffffff;
+}
+
+.footer .footer-newsletter .btn:focus {
+    box-shadow: none;
+}
+
+
+.footer .copyright {
+    position: relative;
+    padding: 25px 0;
+    background: #000000;
+}
+
+.footer .copyright .copy-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+.footer .copyright .copy-text p a {
+    color: #0085ff;
+    text-decoration: none;
+}
+
+.footer .copyright .copy-text p a:hover {
+    color: #ff008c;
+}
+
+.footer .copyright .copy-menu {
+    position: relative;
+    font-size: 0;
+    text-align: right;
+}
+
+.footer .copyright .copy-menu a {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 15px;
+    padding-right: 15px;
+    border-right: 1px solid rgba(255, 255, 255, .3);
+}
+
+.footer .copyright .copy-menu a:hover {
+    color: #0085ff;
+}
+
+.footer .copyright .copy-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+@media (max-width: 767.98px) {
+    .footer .copyright .copy-text,
+    .footer .copyright .copy-menu {
+        text-align: center;
+    }
+
+    .footer .copyright .copy-text p {
+        margin-bottom: 5px;
+    }
+
+}
+
+Start of css gallery 
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 77). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox is used as a fallback so that browsers which don't support grid will still recieve an identical layout.
+
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+/*:root {*/
+  /* Base font size */
+  /*font-size: 10px;*/
+/*}*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: white;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 2rem 2rem;
+}
+
+.heading {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  padding: 3.5rem 0;
+  color: black;
+  font-kerning: normal;
+}
+
+.heading span {
+  display: block;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  /* Compensate for excess margin on outer gallery flex items */
+  margin: -1rem -1rem;
+}
+
+.gallery-item {
+  /* Minimum width of 24rem and grow to fit available space */
+  flex: 1 0 24rem;
+  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.gallery-image {
+  display: block;
+  width: 40%;
+  height: auto%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 2rem;
+  }
+
+  .gallery,
+  .gallery-item {
+    margin: 0;
+  }
+}
+
+.bottom-left p 
+
+{
+  z-index: 100;
+  position: relative;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin:auto;
+  text-align:center;
+}
+/*
+End of css gallery*/
+
+
+
+/*start of form styling*/
+
+/*Css styles for order, contact form and form heading*/
+
+form {
+    margin-left:auto;
+    margin-right:auto;
+    width: 500px;
+    height: auto;
+    padding:20px;
+    border: 8px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    /*background: rgba(0, 0, 0, 0.5); */
+    background-color: lightgray;
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+   
+}
+
+
+
+/*form backgraound image starts here*/
+.bgimage {
+  /* The image used */
+  background-image: url("valentinesbg2.png");
+
+  /* Control the height of the image */
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bgimage2 {
+  /* The image used */
+  background-image: url("valentinesbg2.png");
+
+  /* Control the height of the image */
+ 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/*form background image ends here*/
+
+form label{
+  font-weight:bold;
+}
+/*Sets up textarea where additional requests can be made*/
+
+textarea{
+   width: 450px;
+    height: 140px;
+    border: 1px solid rgba(255,255,255,.6);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:14px;
+    color:black;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+    font-weight:bolder;
+}
+
+
+/*General settings for all buttons of class input and select*/
+input, select {
+   /* background: rgba(105,105,105,105)*/
+    width: 379px;
+    height: auto;
+    border: 3px solid rgba(255,255,255,.4);
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; 
+    display:block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:14px;
+    color:black;
+    font-weight:bolder;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:20px;
+
+    
+}
+
+/*Styles background  for submit name email message telephone and options button*/
+
+input[type=submit] {
+    cursor:pointer;
+
+}
+
+input.name  {
+   /* background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_name.png) no-repeat scroll 16px 16px; */
+    padding-left:45px;
+
+
+}
+
+input.email  {
+    /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;*/
+    padding-left:45px;
+}
+
+
+input.message {
+    /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;*/
+    padding-left:45px;
+}
+
+
+input.tel {
+      /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;*/
+      padding-left:45px;
+}
+
+
+
+textarea {
+      /*background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_message.png) no-repeat scroll 16px 16px;*/
+      padding-left:45px;
+}
+
+#appt, #quantity, #DateOrdered , #flowers, #inputAddressLine1, #inputAddressLine2,#inputAddressLine3  {
+     /* background: rgba(105,105,105,105) url(http://luismruiz.com/img/gemicon_email.png) no-repeat scroll 16px 20px;*/
+      padding-left:45px;
+      
+}
+
+
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+
+:-moz-placeholder{ 
+    color: black; 
+}
+
+::-moz-placeholder {
+    color: black;
+}
+
+:-ms-input-placeholder {  
+    color: black; 
+}
+
+input:focus, textarea:focus, select:focus { 
+   /* background-color: rgba(105, 105,105, 105);*/
+    -moz-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    box-shadow: 0 0 5px 1px rgba(255,255,255,.5);
+    overflow: hidden; 
+      color:black;
+}
+
+/*Styles submit button on contact form*/
+
+.btn {
+    width: 120px;
+    height: 44px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    float:right;
+    border: 1px solid #253737;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6da5a3), to(#416b68));
+    background: -webkit-linear-gradient(top, #6da5a3, #416b68);
+    background: -moz-linear-gradient(top, #6da5a3, #416b68);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background: -o-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    padding: 10.5px 21px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    text-shadow: #333333 0 1px 0;
+/*    color: #e1e1e1;*/
+    color:black;
+    text-align: center;
+}
+
+.btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: #416b68;
+    background: -webkit-gradient(linear, left top, left bottom, from(#77b2b0), to(#416b68));
+    background: -webkit-linear-gradient(top, #77b2b0, #416b68);
+    background: -moz-linear-gradient(top, #77b2b0, #416b68);
+    background: -ms-linear-gradient(top, #77b2b0, #416b68);
+    background: -o-linear-gradient(top, #77b2b0, #416b68);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: red;
+    cursor: pointer;
+ }
+
+.btn:active {
+    margin-top:1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    background: red;
+    background: -webkit-gradient(linear, left top, left bottom, from(#416b68), to(#416b68));
+    background: -webkit-linear-gradient(top, #416b68, #609391);
+    background: -moz-linear-gradient(top, #416b68, #6da5a3);
+    background: -ms-linear-gradient(top, #416b68, #6da5a3);
+    background: -o-linear-gradient(top, #416b68, #6da5a3);
+    background-image: -ms-linear-gradient(top, #416b68 0%, #6da5a3 100%);
+    color: #fff;
+    -webkit-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    -moz-box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    box-shadow: rgba(255,255,255,0) 0 1px 0, inset rgba(255,255,255,0.7) 0 1px 0;
+    cursor: wait;
+   }
+
+/*responsible for shadow in header text on order and contact forms*/
+.formheading { 
+        margin: 50px auto; 
+        text-align: center; 
+        color: maroon; 
+        font-size: 2em; 
+        transition: 0.5s; 
+        font-family: Arial, Helvetica, sans-serif; 
+    } 
+  
+    .formheading { 
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 
+                     0 3px 0 #ccc, 0 4px 0 #ccc, 
+                     0 5px 0 #ccc, 0 6px 0 #ccc, 
+                     0 7px 0 #ccc, 0 8px 0 #ccc, 
+                     0 9px 0 #ccc, 0 10px 0 #ccc, 
+                     0 11px 0 #ccc, 0 12px 0 #ccc, 
+                     0 20px 30px rgba(0, 0, 0, 0.5); 
+              }
+
+
+    /*End of Css styles for order, contact form and form heading*/
+/*
+
+
+/*end of form styling*/
+
+/*beginning of styling for about us page*/
+/*Column3 CSS Styles begins here*/
+
+
+/*Set the styling for the box, background, font and oother attrbutes*/
+*{box-sizing:border-box}
+
+/*html{background:skyblue;}*/
+/*{background: #00b4de; color: #fbfbfb; font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; text-align: center; padding: 2em 0;}
+*/
+main{
+  width:94.75%;
+margin: 0 auto;
+ overflow: hidden;
+}
+
+/*General column settings in the about page*/
+.col{
+    background-color: white;
+    color: black;
+    width: 32%;
+    height:500px;
+    float: right;
+    text-align: center;
+    padding:1rem;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-weight:bolder;
+
+ 
+
+}
+
+
+
+/*Sets the column banckground to white for all three columns in the about page*/
+
+.col1/*{ background : linear-gradient (white);} */
+ /* background: linear-gradient(pink,white);*/
+
+.col2/*{ background: white;}*/
+ /* background: linear-gradient(pink,white);*/
+
+.col3/*{ background: white;}*/ 
+
+  /*background: linear-gradient(pink,white);*/
+
+
+/*Centers the headings for about us  company history mission and vision*/
+
+.col1 h2{
+
+    text-align: center;
+
+}
+
+.col2 h2{
+
+    text-align: center;
+}
+
+.col3 h2{
+
+    text-align: center;
+}
+
+
+
+/*footer{
+    clear:both;
+}
+*/
+@media only screen and (max-width:768px){
+    
+    .col1, .col2{
+        width:50%;
+    }
+    .col3{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .col{
+       float: none;
+        width:100%;
+    }
+}
+
+/*End Column3 CSS Styles*/
+
+
+
+/*end of styling for about us page*/
+.viewgal{
+    background-color: yellow;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  
+  
+}
